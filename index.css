@@ -1,0 +1,254 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 100%);
+}
+
+/* -----------------------------MAINBODY----------------------------- */
+html {
+    background-color: hsl(233, 47%, 7%);
+}
+
+/* ------------------------------MAINBODY--------------------------- */
+/* .mainbody {} */
+
+/* --------------------------------MAINCONT------------------------ */
+.maincont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* ----------------------------MAIN BOX---------------------------- */
+.mainbox {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    /* display: grid; */
+    width: 440px;
+    height: 338px;
+    overflow: auto;
+    background-color: hsl(244, 38%, 16%);
+    padding: 3rem 4rem 1rem 3.5rem;
+    /* z-index: 3; */
+}
+
+/* ------------------------DESKTOP IMAGE--------------------- */
+.desktop {
+    width: 405px;
+    height: 332px;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(95, 10, 156);
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.overlay img {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+/* ------------------------- MAINHEAD ----------------------- */
+.mainhead {
+    /* display: flex;
+    position: absolute;
+    top: 50px;
+    left: 50px; */
+    margin-bottom: 1.4rem;
+    /* font-weight: 700; */
+    font-size: 1.3rem;
+    font-family: 'Inter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* text-align: left; */
+
+}
+
+/* ------------------------------MAIN PARAGRAPH--------------------------- */
+.mainpara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsla(0, 0%, 100%, 0.65);
+    text-align: left;
+    padding-right: 50px;
+    font-size: 10px;
+    padding-bottom: 30px;
+    line-height: 1rem;
+    font-family: 'Inter', 'Courier New', Courier, monospace;
+}
+
+/* -------------------STAT BOX---------------------- */
+.statbox {
+    display: flex;
+    font-size: 10px;
+    font-family: 'Inter', 'Courier New', Courier, monospace, serif;
+    font-weight: 600;
+    word-spacing: 2rem;
+}
+
+.mainbox,
+.maincont,
+.mainhead {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.inner {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.company {
+    padding: 17px 35px 20px 0px;
+}
+
+.templates,
+.queries {
+    padding: 17px 35px 20px 20px;
+}
+
+.inside-statbox {
+    color: hsla(0, 0%, 100%, 0.6);
+    padding-top: 3px;
+    font-weight: 450;
+}
+
+/* ------------------------------COLOR----------------- */
+#insight {
+    color: hsl(277, 64%, 61%);
+    padding: 0%;
+    font-weight: 700;
+}
+
+.upper-img {
+    display: none;
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+
+/* =============================RESPONSIVE PAGE======================================= */
+@media (min-width:200px) and (max-width:740px) {
+
+    /* ======================== MAIN THINGS ONLY ============================= */
+    .maincont {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .mainbox {
+        width: 80%;
+        height: 100vh;
+        /* overflow: hidden; */
+        padding: 0%;
+    }
+
+    .mainhead {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0.85rem 0.5rem 0.55rem 0.5rem;
+        margin: 0px;
+        font-weight: 700;
+        font-size: 0.88rem;
+        font-family: 'Inter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .mainpara {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+        text-align: center;
+        padding: 0.8rem;
+        font-size: 0.55rem;
+        line-height: 0.85rem;
+        word-spacing: 0.20rem;
+        font-weight: 400;
+    }
+
+    .mainbox,
+    .maincont,
+    .mainhead {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    /* ==============================STATBOX============================= */
+    .statbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inner{
+        padding: 0%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .company,
+    .templates,.queries {
+        padding: 0.5875rem 2.1875rem 0.5875rem 2.1875rem;
+    }
+
+
+    /* ============================THIS IS FOR IMAGES============================= */
+
+    .upper-img {
+        display: flex;
+        width: 100%;
+
+    }
+
+    .lower-img {
+        display: none;
+    }
+    /* =========================================================================== */
+}
+
+@media (min-width:500px) and (max-width:740px) {
+    #heading{
+        font-size: 1.2rem;
+    }
+
+    .mainpara {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.3rem 5rem 1.3rem 5rem;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1rem;
+        word-spacing: 0.2rem;
+        font-weight: 300;
+    }
+}
